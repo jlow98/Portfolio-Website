@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Low Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6d8a88133c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id ="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo3.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Fresh Graduate</p>
+            <h1>Hi, I'm <span>Jackson</span><br> From Singapore </h1>
+        </div>
+    </div>
+</div>
+<!-- ----------about------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Recent graduate with Double First Class Honours
+                in Business Analytics and Computer Science
+                with a unique blend of programming and analytical skills.
+                Eager to contribute my expertise to drive
+                innovative solutions and make impactful contributions
+                in a dynamic and collaborative work environment.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('ccas')">CCAs</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <span>Nanyang Technological University (2019 - 2023)</span>
+                        <li>Bachelor of Business (Business Analytics)<br>Cumulative GPA: 4.54/5</li>
+                        <li>Bachelor of Engineering (Computer Science)<br>Cumulative GPA 4.52/5</li>
+                        <span>Victoria Junior College (2015 - 2016)</span>
+                        <li>Rank Points: 83.75/90</li>
+                        <span>Anglican High School (2011 - 2014)</span>
+                        <li>GCE O-Levels L1R5: 3</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <span>Agency for Integrated Care (2021)</span>
+                        <li class = sub-label>IT Intern - IT, Innovation and Digitalisation Division</li>
+                        <li>Developed an online training program in collaboration with external partners,
+                            <br>enhancing the proficiency of AIC’s use of its technologies.</li>
+                        <li>Spearheaded automation of the annual recertification process by creating,
+                            <br>personalised forms, and automating email communications using VBA. </li>
+                        <li>Performed gap analysis of existing systems and implemented solutions that,
+                            <br>targeted operational inefficiencies and streamlined processes.</li>
+                        <li>Developed SOPs with documented processes for improved organisational,
+                            <br>knowledge retention and smoother transitions during staff changes.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="ccas">
+                    <ul>
+                        <span>Quintsical Productions (2019-2023)</span>
+                        <li class=sub-label>Director/Chairperson (2022)</li>
+                        <li>Led a crew of over 40 members in the successful execution of a production,
+                            <br>exercising creative oversight on script writing and song creation.</li>
+                        <li>Coordinated auditions, rehearsals, production timelines, and liaised with
+                            <br>external parties for fundraising and securing a venue. </li>
+
+                        <span>NTU Hall 5 Jamband (2019-2023)
+                            <a href="https://www.youtube.com/@ntuhallVjamband" style="color:#b54769">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </span>
+                        <li>Performed at multiple hall-level events</li>
+                        <li>Collaborated with Singapore Gardens By The Bay to organise
+                            <br>and host an event titled "Serendipity"</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <span>Programming</span>
+                        <li>Python, Java, Javascript, C++, 
+                            <br>C#, R, SQL, MATLAB, VBA</li>
+                        
+                        <span>Technologies</span>
+                        <li>Pandas/Numpy/Scipy, mySQL/MongoDB,
+                            <br>Git/SVN, Android Studio, Unity, ReactJS
+                            <br>RStudio, Tableau, Gurobi, Microsoft Office</li>
+
+                        <span>Soft Skills</span>
+                        <li>Adaptability, Collaboration, Communication,
+                            <br>Continuous Learning, Creativity, Empathy
+                            <br>Leadership, Problem-Solving</li>
+                    </ul>
+                </div>         
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------portfolio---------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Self-Driving Car Simulator</h3>
+                    <p>Developed using Javascript, HTML and CSS.Uses sensors and an artificial neural
+                         network to detect traffic and automatically avoids collision.
+                        Credit to Radu Mariescu Istodor's tutorial.</p>
+                    <a href ="https://github.com/jlow98/Self-Driving-Car"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>VR Rubik's Cube Simulator</h3>
+                    <p>Employed hand recognition technology within Unity 
+                        to replicate the Rubik's cube solving process in a 
+                        Virtual Reality enviroment, simulating a realistic
+                        and immersive user experience.</p>
+                    <a href ="https://github.com/jlow98/FYP"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg">
+                <div class="layer">
+                    <h3>Itinerary Planner</h3>
+                    <p>Optimised travel schedules with Gurobi and Python.Itineraries were presented
+                        in UX friendly formats using data visualisation tools,
+                        enhancing user engagement and decision-making.</p>
+                    <a href ="https://github.com/jlow98/Itinerary-Planner"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/jlow98" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------------contact----------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>jacksonlow98@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+65 8722 0785</p>
+                <a href="images/Jackson_Low_Resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Jackson Low.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwOru1fOdI_KOc6bsWV0p_De8B_WGghS72eUim6_YZQyPtUI7y5c7f0p7R2tOESLmoY/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)}) 
+        .then(response => {
+            msg.innerHTML= "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
